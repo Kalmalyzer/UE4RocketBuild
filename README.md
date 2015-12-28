@@ -6,6 +6,8 @@ This repository contains in-progress instructions on how to create a "Launcher" 
 
 So far it can successfully build a version of the engine. I have not tested building a stand-alone game executable using this engine version yet. Distribution and installation of a new engine version is still not sorted.
 
+UE 4.10.0 is currently being used when testing.
+
 ## Usage
 
 1. Grab the UE4 project from GitHub.
