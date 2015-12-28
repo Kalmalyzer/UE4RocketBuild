@@ -54,6 +54,7 @@ UnrealBuildTool needs to see at least one code project with the IsPromotable fla
 This is a clean replacement for the two code changes which <> describes in the forum thread linked above.
 
 Reference: LegacyBranchSetup.cs, search for "DoASharedPromotable" and "NumSharedAllHosts".
+
 Reference: BlankCodeProjectEditor.Target.cs, search for "bIsPromotable".
 
 ### Giving the Engine project a path on disk
