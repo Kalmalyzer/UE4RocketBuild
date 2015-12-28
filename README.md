@@ -37,7 +37,7 @@ Some developers would like a flow where a single developer builds a "Rocket"-sty
 
 Rocket builds are not documented by Epic. It is not a feature that is officially supported by them.
 
-When Epic do their Rocket builds, they are not building from the public GitHub repository; they build off of an internal repository, which contains more files than the public GitHub repository. Most of the reasons for RocketBuild pipeline breaks is due to 
+When Epic do their Rocket builds, they are not building from the public GitHub repository; they build off of an internal repository, which contains more files than the public GitHub repository. Most of the reasons for Rocket build pipeline breaks is due to either the build system relying on certain files (which are not in the GitHub repository) to exist or the build system relying on certain environment configurations which are not part of the source code and only exist on Epic's build servers and workstations.
 
 ## References
 
