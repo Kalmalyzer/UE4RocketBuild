@@ -4,9 +4,9 @@
 
 This repository contains in-progress instructions on how to create a "Launcher" / "Rocket" build from Epic's GitHub repository.
 
-So far it can successfully build a version of the engine. I have not tested building a stand-alone game executable using this engine version yet. Distribution and installation of a new engine version is still not sorted.
+So far it can successfully build a version of the engine. This stand-alone version of the engine can be registered using GUID registration, and stand-alone games can be developed & packaged using that engine version. Trouble-free distribution and installation of a new engine version to an entire team is still not sorted.
 
-UE 4.10.0 is currently being used when testing.
+Testing is done with UE 4.10.0 on a Windows 10 machine, targetting Win64.
 
 ## Usage
 
