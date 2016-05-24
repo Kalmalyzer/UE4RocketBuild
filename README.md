@@ -4,7 +4,9 @@
 
 This repository contains in-progress instructions on how to create a "Launcher" / "Rocket" build from Epic's GitHub repository.
 
-It can successfully build a Win64 version of the engine. Stand-alone games can be packaged with them. It is easy to distribute one-off custom engine builds to an entire team. I have not tested other platforms than Win64.
+It can successfully build the engine. Stand-alone games can be packaged with them. It is easy to distribute one-off custom engine builds to an entire team.
+
+Testing has been done with UE4 4.11.2 on a Windows 10 machine, targetting Win64.
 
 ## Usage
 
@@ -67,6 +69,7 @@ UnrealBuildTool needs to see at least one code project with the IsPromotable fla
 This is a clean replacement for the two code changes which <> describes in the forum thread linked above.
 
 Reference: LegacyBranchSetup.cs, search for "DoASharedPromotable" and "NumSharedAllHosts".
+
 Reference: BlankCodeProjectEditor.Target.cs, search for "bIsPromotable".
 
 ### Giving the Engine project a path on disk
