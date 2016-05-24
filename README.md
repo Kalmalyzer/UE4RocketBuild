@@ -4,9 +4,11 @@
 
 This repository contains in-progress instructions on how to create a "Launcher" / "Rocket" build from Epic's GitHub repository.
 
-So far it can successfully build a version of the engine. I have not tested building a stand-alone game executable using this engine version yet. Distribution and installation of a new engine version is still not sorted.
+It can successfully build a Win64 version of the engine. Stand-alone games can be packaged with them. It is easy to distribute one-off custom engine builds to an entire team. I have not tested other platforms than Win64.
 
 ## Usage
+
+### Building
 
 1. Grab the UE4 project from GitHub.
 
@@ -18,9 +20,19 @@ So far it can successfully build a version of the engine. I have not tested buil
 
 5. The resulting build will appear in LocalBuilds\Rocket.
 
-6. TODO: figure out how to distribute and "install" this on developers' machines.
+### Distributing & installing
 
-See below for more usage instructions.
+6. Copy RegisterEngineVersion.cmd into LocalBuilds\Rocket.
+
+7. Pick an identifier for your engine version (example: 4.11.2-HomeBuilt-4f37f2cd)
+
+8. Ensure your UE4 game's .uproject file refers to that specific identifier.
+
+9. Distribute the contents of LocalBuilds\Rocket to all members of the team.
+
+10. Make all members execute `RegisterEngineVersion.cmd <identifier>`
+
+11. Launching your UE4 game's .uproject should now result in your game opening in your home-built editor.
 
 
 ## Background
@@ -41,8 +53,11 @@ When Epic do their Rocket builds, they are not building from the public GitHub r
 
 ## References
 
-This forum thread has provided most of the information so far:
-(https://forums.unrealengine.com/showthread.php?69744-Distributing-custom-build-to-team)
+These forum threads have provided most of the information so far:
+
+https://forums.unrealengine.com/showthread.php?69744-Distributing-custom-build-to-team
+
+https://answers.unrealengine.com/questions/393280/packaging-ue4-for-distributing-internally.html
 
 ## Important things encountered so far
 
@@ -89,7 +104,3 @@ Reference: UEBuildTarget.cs, search for "UnrealTargetPlatform"
 ### Further commandline options
 
 Most commandline options that apply are listed at the beginning of GUBP.cs.
-
-## Future research
-
-Look in UnrealVersionselector.cpp, RegisterCurrentEngineDirectory(). What should the engine registration mechanism look like for a manually-built engine version?
