@@ -1,4 +1,6 @@
-@ECHO OFF
+@echo off
+setlocal
+pushd %~dp0
 
 IF "%1"=="" (
 
@@ -9,6 +11,11 @@ PAUSE
 
 ) ELSE (
 
-reg add "HKEY_CURRENT_USER\SOFTWARE\Epic Games\Unreal Engine\Builds" /v "%1" /t REG_SZ /d "%CD%\\"
+rem Install prerequisites...
+echo Installing prerequisites...
+start /wait Engine\Extras\Redist\en-us\UE4PrereqSetup_x64.exe /quiet
+
+rem Register the engine installation...
+reg add "HKEY_CURRENT_USER\SOFTWARE\Epic Games\Unreal Engine\Builds" /f /v "%1" /t REG_SZ /d ".\"
 
 )
