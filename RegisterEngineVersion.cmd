@@ -9,6 +9,6 @@ PAUSE
 
 ) ELSE (
 
-reg add "HKEY_CURRENT_USER\SOFTWARE\Epic Games\Unreal Engine\Builds" /v "%1" /t REG_SZ /d "%CD%\\"
+reg add "HKEY_CURRENT_USER\SOFTWARE\Epic Games\Unreal Engine\Builds" /f /v "%1" /t REG_SZ /d "%CD%\\"
 
 )
