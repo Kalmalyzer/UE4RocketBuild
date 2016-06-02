@@ -6,7 +6,7 @@ This repository contains in-progress instructions on how to create a "Launcher" 
 
 It can successfully build the engine. Stand-alone games can be packaged with them. It is easy to distribute one-off custom engine builds to an entire team.
 
-Testing has been done with UE4 4.11.2 on a Windows 10 machine, targetting Win64.
+Testing has been done with UE4 4.11.2 & 4.12.0 on a Windows 10 machine, targetting Win64.
 
 ## Usage
 
