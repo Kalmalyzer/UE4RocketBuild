@@ -12,7 +12,7 @@ Testing has been done with UE4 4.11.2 & 4.12.0 on a Windows 10 machine, targetti
 
 ### UE4 4.13
 
-For UE4 4.13, it appears that Epic has deprecated the GBUP build process. This project is not yet 4.13 compatible.
+For UE4 4.13, it appears that Epic has deprecated the GUBP build process. This project is not yet 4.13 compatible.
 See https://forums.unrealengine.com/showthread.php?123490-Current-advice-for-distributing-custom-engine-builds-to-team-without-recompiling and https://forums.unrealengine.com/showthread.php?119130-Unreal-Engine-4-13-Preview for partial info on the 4.13 build process.
 
 ## Usage
