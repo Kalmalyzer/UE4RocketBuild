@@ -2,11 +2,18 @@
 
 ## About
 
+### UE4 4.11 & 4.12
+
 This repository contains in-progress instructions on how to create a "Launcher" / "Rocket" build from Epic's GitHub repository.
 
 It can successfully build the engine. Stand-alone games can be packaged with them. It is easy to distribute one-off custom engine builds to an entire team.
 
 Testing has been done with UE4 4.11.2 & 4.12.0 on a Windows 10 machine, targetting Win64.
+
+### UE4 4.13
+
+For UE4 4.13, it appears that Epic has deprecated the GBUP build process. This project is not yet 4.13 compatible.
+See https://forums.unrealengine.com/showthread.php?123490-Current-advice-for-distributing-custom-engine-builds-to-team-without-recompiling and https://forums.unrealengine.com/showthread.php?119130-Unreal-Engine-4-13-Preview for partial info on the 4.13 build process.
 
 ## Usage
 
